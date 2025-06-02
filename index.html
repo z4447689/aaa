@@ -25,50 +25,8 @@
             border-radius: 8px;
             font-size: 16px;
             cursor: pointer;
-            transition: background-color 0.3s;
         }
         .btn:hover {
-            background-color: #45a049;
-        }
-        #image-container {
-            margin-top: 40px;
-        }
-        #image-container img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            transition: opacity 0.4s ease-in-out;
-            opacity: 1;
-        }
-    </style>
-</head>
-<body>
-    <h1>文科专业弹幕词频分析</h1>
-    <p>以下是新闻、法律、社会学、哲学四个专业相关视频弹幕的高频词柱状图，点击按钮查看。</p>
-    <div class="button-container">
-        <button class="btn" onclick="showImage('新闻专业柱状图.png', '新闻专业柱状图')">新闻专业</button>
-        <button class="btn" onclick="showImage('法律专业柱状图.png', '法律专业柱状图')">法律专业</button>
-        <button class="btn" onclick="showImage('社会学专业柱状图.png', '社会学专业柱状图')">社会学专业</button>
-        <button class="btn" onclick="showImage('哲学专业柱状图.png', '哲学专业柱状图')">哲学专业</button>
-    </div>
-    <div id="image-container">
-        <img id="main-image" src="images/总体词云图.jpg" alt="总体词云图">
-    </div>
+            bac
 
-    <script>
-        function showImage(imagePath, altText) {
-            const img = document.getElementById('main-image');
-            // 先让图片渐隐
-            img.style.opacity = 0;
-            setTimeout(() => {
-                img.src = imagePath;
-                img.alt = altText;
-                img.style.opacity = 1;
-            }, 300);
-        }
-    </script>
-</body>
-</html>
 
