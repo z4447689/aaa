@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>全球文科倒闭潮下的网友看法</title>
     <style>
         body {
@@ -34,7 +34,9 @@
             margin-top: 30px;
         }
         #image-container img {
-            max-width: 90%;
+            max-width: 800px;
+            max-height: 600px;
+            width: auto;
             height: auto;
             border: 1px solid #ccc;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -43,11 +45,10 @@
     </style>
 </head>
 <body>
-
     <h1>全球文科倒闭潮下的网友看法</h1>
 
     <div id="image-container">
-        <img id="main-image" src="总体词云图.jpg" alt="总体词云图">
+        <img src="总体词云图.jpg" alt="总体词云图" />
     </div>
 
     <div class="button-container">
@@ -59,9 +60,8 @@
 
     <script>
         function showImage(imagePath) {
-            document.getElementById('main-image').src = imagePath;
+            document.querySelector('#image-container img').src = imagePath;
         }
     </script>
-
 </body>
 </html>
